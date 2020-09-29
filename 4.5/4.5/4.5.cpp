@@ -1,5 +1,6 @@
 ﻿#include <stdio.h>
 #include <locale.h>
+#include <math.h>
 int main(void) {
 	setlocale(LC_ALL, "Russian");
 	float a, b, s, r, p, h;
@@ -7,11 +8,11 @@ int main(void) {
 	scanf("%f", &a);
 	printf("Введите значение переменной b \n b = ");
 	scanf("%f", &b);
-	s = a*a + b*b;
-	if (a*a >= b*b) {
+	s = a * a + b * b;
+	if (a * a >= b * b) {
 		r = (a * a - b * b);
 	}
-	else{
+	else {
 		r = (b * b - a * a);
 	}
 	p = a * a * b * b;
