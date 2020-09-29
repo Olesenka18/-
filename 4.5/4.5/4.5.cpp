@@ -8,18 +8,13 @@ int main(void) {
 	scanf("%f", &a);
 	printf("Введите значение переменной b \n b = ");
 	scanf("%f", &b);
-	s = a * a + b * b;
-	if (a * a >= b * b) {
-		r = (a * a - b * b);
-	}
-	else {
-		r = (b * b - a * a);
-	}
-	p = a * a * b * b;
-	h = (a * a) / (b * b);
-	printf("Сумма квадратов равна %f \n", s);
-	printf("Разность квадратов равна %f \n", r);
-	printf("Произведение квадратов равно %f \n", p);
-	printf("Частное квадратов равно %f \n", h);
+	s = fabsf(a) + fabsf(b);
+    r = fabsf(a) - fabsf(b);
+	p = fabsf(a) * fabsf(b);
+	h = fabsf(a) / fabsf(b);
+	printf("Сумма модулей равна %f \n", s);
+	printf("Разность модулей равна %f \n", r);
+	printf("Произведение модулей равно %f \n", p);
+	printf("Частное модулей равно %f \n", h);
 	return 0;
 }
