@@ -4,20 +4,18 @@
 
 int main(void) {
 	setlocale(LC_ALL, "Russian");
-	float A, B, C, AC, BC, S;
+	float A, B, C, AB, BC;
 	printf("Введите точку A \n A = ");
 	scanf("%f", &A);
 	printf("Введите точку B \n B = ");
 	scanf("%f", &B);
 	printf("Введите точку C \n C = ");
 	scanf("%f", &C);
-	AC = fabsf(A - C);
+	AB = fabsf(A - B);
 	BC = fabsf(B - C);
-	S = AC + BC;
-	printf("AC = %f ", AC);
+	printf("AB = %f ", AB);
 	printf("BC = %f ", BC);
-	printf("S = %f ", S);
-	
+
 	return 0;
 
 }
