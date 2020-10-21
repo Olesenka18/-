@@ -9,7 +9,7 @@ int main(void) {
 	printf("Введите значение a \n");
 	scanf("%f", &a);
 	a = a * pi / 180;
-	printf("a = %lf \n", a);
+	printf("a = %f \n", a);
 	return 0;
 
 }

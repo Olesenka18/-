@@ -4,11 +4,13 @@
 
 int main(void) {
 	setlocale(LC_ALL, "Russian");
-	float a;
-	printf("Введите значение a \n");
-	scanf("%f", &a);
-
-	printf("a = %lf \n", a);
+	float A, x, B;
+	printf("Введите значение A \n");
+	scanf("%f", &A);
+	printf("Введите значение B \n");
+	scanf("%f", &B);
+	x = -(B / A);
+	printf("x = %lf \n", x);
 	return 0;
 
 }
