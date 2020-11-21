@@ -3,7 +3,7 @@
 
 int main(void) {
 	setlocale(LC_ALL, "Russian");
-	int A, B, C;
+	int A, B;
 	printf("Введите значение A \n");
 	scanf("%i", &A);
 	B = A % 2;
