@@ -3,17 +3,38 @@
 
 int main(void) {
 	setlocale(LC_ALL, "Russian");
-	int A, B;
-	printf("Введите значение A \n");
-	scanf("%i", &A);
-	printf("Введите значение B \n");
-	scanf("%i", &B);
-	if ((A > 2) && (B <= 3)) {
-		printf("Истина");
+	int N;
+	char C;
+	printf(" Север - N \n Юг - S \n Запад - W \n Восток - E \n");
+	printf("Введите направление \n");
+	scanf("%c", &C);
+	printf("Введите действие \n");
+	scanf("%i", &N);
+	if (N == 1) {
+		switch (C) {
+		case 'N': printf("Направление: Запад"); 
+			break;
+		case 'S': printf("Направление: Восток"); 
+			break;
+		case 'W': printf("Направление: Юг"); 
+			break;
+		case 'E': printf("Направление: Север"); 
+			break;
+		}
 	}
-	else {
-		printf("Ложь");
+	if (N == -1){
+		switch (C) {
+		case 'N': printf("Направление: Восток"); 
+			break;
+		case 'S': printf("Направление: Запад"); 
+			break;
+		case 'W': printf("Направление: Север"); 
+			break;
+		case 'E': printf("Направление: Юг");
+			break;
+		}
 	}
+
 
 	return 0;
 
